@@ -1,0 +1,31 @@
+# Ignore Homebrew cache files
+/Library/Caches/Homebrew/
+
+/*.brew
+/*.bottle.*
+/*.tar.gz
+/*.zip
+
+# Ignore macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignore temporary editor files
+*.swp
+*.swo
+*.swn
+*~
+*.bak
+
+# Ignore VSCode settings if you use VSCode
+.vscode/
+
+# Ignore GitHub Actions workflow artifacts (if generated)
+.github/workflows/*.tmp
+
+# Ignore log files
+*.log
+
+# Ignore brew test-bot artifacts (optional, if you ever run it locally)
+homebrew-test-bot/
