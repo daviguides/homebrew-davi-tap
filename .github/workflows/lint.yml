@@ -1,0 +1,24 @@
+name: Homebrew Lint
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  style:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Run brew style on Formula
+        run: |
+          brew update
+          brew style Formula
+
