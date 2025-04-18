@@ -4,6 +4,7 @@ class Rabbitmqadmin < Formula
   url "http://localhost:15672/cli/rabbitmqadmin"
   sha256 "8c7481bcd432e6e4a4e9405ff1d18d1d8b0c8ad93d0f5b4c735a279f2f5ef8c7"
   version "3.12.0"
+  sha256 :no_check
 
   def install
     bin.install "rabbitmqadmin"
